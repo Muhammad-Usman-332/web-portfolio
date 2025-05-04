@@ -1,0 +1,171 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header{
+  background-color: #333;
+  color: white; 
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline;
+  padding: 0 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+/* #about, #skills, #projects, #contact:hover{
+  text-decoration: underline;
+} */
+
+.hero{
+  margin-top: 5px;
+}
+.hero h2{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p{
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cen-button{
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white ;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+/* Section Styling */
+section{
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+.progress-bar.html{
+  background: #e74c3c;
+  width: 90%;
+}
+
+.progress-bar.css{
+  background: #3498db;
+  width: 80%;
+}
+
+.progress-bar.js{
+  background: #f39c12;
+  width: 70%;
+}
+
+.project-gallery{
+  display: flex;
+  gap: 20px;
+}
+
+.project-1{
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.project-1 img{
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: white;
+  /* background-size: cover; */
+}
+
+.project-1 h2{
+  text-align: left;
+}
+
+form input,form textarea{
+  width: 98%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* display: block; */
+}
+
+form button{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  color: white;
+
+}
+form button:hover{
+  background-color: #27ae60;
+} 
+
+footer{
+  padding: 20px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+}
+
+.social-links a{
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links:hover{
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .projects {
+      flex-direction: column;
+  }
+}
